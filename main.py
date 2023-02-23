@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 
 # options=["Home", "About", "Skills", "Projects", "Contact"],
 # icons=["house", "person-circle", "code-slash", "person-workspace", "telephone"],
@@ -58,18 +59,13 @@ def contact():
 
 # lem pemersatu -----------------------------------------------------------------------------
 
-
 with st.container():
-    with st.expander('More menu'):
+    with st.expander("Main Menu"):
         home_button = st.button("Home", key="home")
         about_button = st.button("About", key="about")
         skills_button = st.button("Skills", key="skills")
         projects_button = st.button("Projects", key="projects")
         contact_button = st.button("Contact", key="contact")
-
-
-
-
 
 # Get the current query parameters
 params = st.experimental_get_query_params()
@@ -100,6 +96,8 @@ else:
     st.experimental_set_query_params(page="home")
     home()
 
-
+for i in range(10):
+    st.write("Hello")
+    time.sleep(1)
 
 
