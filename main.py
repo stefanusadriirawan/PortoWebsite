@@ -140,7 +140,6 @@ st.write("""
 - Django
 - React
 - HTML/CSS
-- JavaScript
 """)
 
 # Adding a section for projects
