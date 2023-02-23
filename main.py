@@ -66,6 +66,18 @@ with st.container():
     projects_button = cols[3].button("Projects", key="projects", )
     contact_button = cols[4].button("Contact", key="contact", )
 
+# Add custom CSS to change the direction of the column to row on mobile devices
+st.markdown("""
+    <style>
+        @media (max-width: 375px) {
+            .stHorizontal {
+                flex-direction: row !important;
+                overflow-x: scroll;
+            }
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Get the current query parameters
 params = st.experimental_get_query_params()
 
