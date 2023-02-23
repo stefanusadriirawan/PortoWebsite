@@ -1,6 +1,11 @@
 # Importing required libraries
 import streamlit as st
+
+
+
 #from streamlit_option_menu import option_menu
+
+
 
 
 # Setting the page title
@@ -15,6 +20,8 @@ st.set_page_config(page_title="My Portfolio Website")
 st.markdown(
     """
     <style>
+    
+    [title~="st.iframe"] { width: 100%}
     
     /* For mobile phones: */
     [class*="col-"] {
