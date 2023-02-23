@@ -65,6 +65,8 @@ st.markdown(
     
     ul {
         display: flex;
+        justify-content: center; /* center horizontally */
+        align-items: center; /* center vertically */
         list-style: none;
         margin: 0;
         padding: 0;
