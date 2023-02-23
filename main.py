@@ -12,29 +12,85 @@ st.set_page_config(page_title="My Portfolio Website")
 # navbar -----------------------------------------------------------------------------
 
 # as sidebar menu
-
-st.markdown('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">', unsafe_allow_html=True)
-
 st.markdown("""
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #3498DB;">
-  <a class="navbar-brand" href="https://youtube.com/dataprofessor" target="_blank">Data Professor</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link disabled" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://youtube.com/dataprofessor" target="_blank">YouTube</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://twitter.com/thedataprof" target="_blank">Twitter</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+header {
+	background-color: #f2f2f2;
+	padding: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.logo a {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0 10px;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+</style
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Minimalist Navbar</title>
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"><a href="#">My Website</a></div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<h1>Welcome to My Website!</h1>
+		<p>Here's some sample content.</p>
+	</main>
+</body>
+</html>
+
 """, unsafe_allow_html=True)
 
 
@@ -79,14 +135,3 @@ st.write("""
 - Phone: +1-123-456-7890
 - LinkedIn: [https://www.linkedin.com/in/johndoe](https://www.linkedin.com/in/johndoe)
 """)
-
-if st.button("Move to top"):
-    st.components.v1.html(
-        """
-        <script>
-        console.log("Hello, JavaScript!");
-        </script>
-        """
-        ,scrolling=True
-    )
-
