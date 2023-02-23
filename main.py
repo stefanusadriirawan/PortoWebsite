@@ -17,6 +17,7 @@ with col2:
     In my free time, I like to contribute to open-source projects and learn new technologies. 
     """)
 st.write("---")
+st.write("mamen")
 # Adding a section for skills
 st.header("Skills")
 st.write("""
