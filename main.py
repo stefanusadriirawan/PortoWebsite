@@ -94,8 +94,6 @@ st.markdown(
     }
     </style>
     
-    
-
 
     <!DOCTYPE html>
     <html>
@@ -107,7 +105,6 @@ st.markdown(
     <body>
         <header>
             <nav>
-                <div class="logo"><a href="#">My Website</a></div>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
