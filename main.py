@@ -58,25 +58,15 @@ def contact():
 
 # lem pemersatu -----------------------------------------------------------------------------
 
-with st.container():
-    cols = st.columns(2)
-    home_button = cols[0].button("Home", key="home",)
-    about_button = cols[1].button("About", key="about", )
-    skills_button = cols[1].button("Skills", key="skills", )
-    projects_button = cols[1].button("Projects", key="projects", )
-    contact_button = cols[1].button("Contact", key="contact", )
+with st.sidebar:
+    expander = st.expander('Menu')
+    with expander:
+        home_button = st.button("Home", key="home")
+        about_button = st.button("About", key="about")
+        skills_button = st.button("Skills", key="skills")
+        projects_button = st.button("Projects", key="projects")
+        contact_button = st.button("Contact", key="contact")
 
-# Add custom CSS to change the direction of the column to row on mobile devices
-st.markdown("""
-    <style>
-        @media (max-width: 375px) {
-            .stHorizontal {
-                flex-direction: row !important;
-                overflow-x: scroll;
-            }
-        }
-    </style>
-""", unsafe_allow_html=True)
 
 # Get the current query parameters
 params = st.experimental_get_query_params()
