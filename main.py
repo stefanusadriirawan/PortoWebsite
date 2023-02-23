@@ -59,17 +59,12 @@ def contact():
 # lem pemersatu -----------------------------------------------------------------------------
 
 with st.container():
-    col1, col2, col3, col4, col5 = st.columns(5)
-    with col1:
-        home_button = st.button("Home", key="home",)
-    with col2:
-        about_button = st.button("About", key="about", )
-    with col3:
-        skills_button = st.button("Skills", key="skills", )
-    with col4:
-        projects_button = st.button("Projects", key="projects", )
-    with col5:
-        contact_button = st.button("Contact", key="contact", )
+    cols = st.columns(5)
+    home_button = cols[0].button("Home", key="home",)
+    about_button = cols[1].button("About", key="about", )
+    skills_button = cols[2].button("Skills", key="skills", )
+    projects_button = cols[3].button("Projects", key="projects", )
+    contact_button = cols[4].button("Contact", key="contact", )
 
 # Get the current query parameters
 params = st.experimental_get_query_params()
