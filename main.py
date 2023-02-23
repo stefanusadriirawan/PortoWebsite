@@ -16,7 +16,7 @@ with col2:
     I have worked on several projects for clients from various industries, including healthcare, finance, and e-commerce. 
     In my free time, I like to contribute to open-source projects and learn new technologies. 
     """)
-
+st.write("---")
 # Adding a section for skills
 st.header("Skills")
 st.write("""
