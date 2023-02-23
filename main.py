@@ -1,5 +1,24 @@
 import streamlit as st
-import time
+from streamlit_option_menu import option_menu
+
+selected = option_menu(
+    menu_title="Main Menu",
+    options=["Home", "About", "Skills", "Projects", "Contact"],
+    icons=["house", "person-circle", "code-slash", "person-workspace", "telephone"],
+    orientation="horizontal",
+    default_index=0,
+)
+
+if selected == "Home":
+    st.write("Home")
+elif selected == "About":
+    st.write("About")
+elif selected == "Skills":
+    st.write("Skills")
+elif selected == "Projects":
+    st.write("Projects")
+elif selected == "Contact":
+    st.write("Contact")
 
 # options=["Home", "About", "Skills", "Projects", "Contact"],
 # icons=["house", "person-circle", "code-slash", "person-workspace", "telephone"],
@@ -59,6 +78,8 @@ def contact():
 
 # lem pemersatu -----------------------------------------------------------------------------
 
+
+
 with st.container():
     with st.expander("Main Menu"):
         home_button = st.button("Home", key="home")
@@ -96,8 +117,5 @@ else:
     st.experimental_set_query_params(page="home")
     home()
 
-for i in range(10):
-    st.write("Hello")
-    time.sleep(1)
 
 
