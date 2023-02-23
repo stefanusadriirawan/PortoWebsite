@@ -1,6 +1,6 @@
 # Importing required libraries
 import streamlit as st
-#from streamlit_option_menu import option_menu
+from streamlit_option_menu import option_menu
 
 
 # Setting the page title
@@ -16,7 +16,7 @@ with st.sidebar:
         options=["Home", "About", "Skills", "Projects", "Contact"],
         icons=["house", "person-circle", "code-slash", "person-workspace", "telephone"],
         default_index=3,
-        orientation="horizontal",
+        orientation="vertical",
     )
 if selected == "Home":
     st.write("Home")
