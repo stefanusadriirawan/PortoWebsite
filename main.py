@@ -59,12 +59,12 @@ def contact():
 # lem pemersatu -----------------------------------------------------------------------------
 
 with st.container():
-    cols = st.columns(5)
+    cols = st.columns(2)
     home_button = cols[0].button("Home", key="home",)
     about_button = cols[1].button("About", key="about", )
-    skills_button = cols[2].button("Skills", key="skills", )
-    projects_button = cols[3].button("Projects", key="projects", )
-    contact_button = cols[4].button("Contact", key="contact", )
+    skills_button = cols[1].button("Skills", key="skills", )
+    projects_button = cols[1].button("Projects", key="projects", )
+    contact_button = cols[1].button("Contact", key="contact", )
 
 # Add custom CSS to change the direction of the column to row on mobile devices
 st.markdown("""
