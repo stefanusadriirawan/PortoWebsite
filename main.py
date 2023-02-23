@@ -58,12 +58,17 @@ def contact():
 
 # lem pemersatu -----------------------------------------------------------------------------
 
-with st.sidebar:
-    home_button = st.button("Home", key="home")
-    about_button = st.button("About", key="about")
-    skills_button = st.button("Skills", key="skills")
-    projects_button = st.button("Projects", key="projects")
-    contact_button = st.button("Contact", key="contact")
+
+with st.container():
+    with st.expander('More menu'):
+        home_button = st.button("Home", key="home")
+        about_button = st.button("About", key="about")
+        skills_button = st.button("Skills", key="skills")
+        projects_button = st.button("Projects", key="projects")
+        contact_button = st.button("Contact", key="contact")
+
+
+
 
 
 # Get the current query parameters
