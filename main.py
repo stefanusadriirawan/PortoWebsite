@@ -12,66 +12,82 @@ st.set_page_config(page_title="My Portfolio Website")
 # navbar -----------------------------------------------------------------------------
 
 # as sidebar menu
-st.markdown("""
-<style>
-body {
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-}
-
-header {
-	background-color: #f2f2f2;
-	padding: 10px;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-}
-
-.logo a {
-	font-size: 20px;
-	font-weight: bold;
-	color: #333;
-	text-decoration: none;
-}
-
-ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	margin: 0 10px;
-}
-
-a {
-	color: #333;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-/* Media queries for responsive design */
-@media only screen and (max-width: 600px) {
+st.markdown(
+    """
+    <style>
+    
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    
+    /* For tablets and up: */
+    @media only screen and (min-width: 768px) {
+        /* Three equal columns */
+        .col-3 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+        
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    header {
+        background-color: #f2f2f2;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
     .logo a {
-        font-size: 16px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
     }
+    
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
     li {
-        margin: 0 5px;
+        margin: 0 10px;
     }
-}
-</style
-
-
+    
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Media queries for responsive design */
+    @media only screen and (max-width: 600px) {
+        .logo a {
+            font-size: 16px;
+        }
+        li {
+            margin: 0 5px;
+        }
+    }
+    </style>
+    
+    
 
 
 <!DOCTYPE html>
@@ -93,11 +109,8 @@ a:hover {
 			</ul>
 		</nav>
 	</header>
+	<br>
 	
-	<main>
-		<h1>Welcome to My Website!</h1>
-		<p>Here's some sample content.</p>
-	</main>
 </body>
 </html>
 
