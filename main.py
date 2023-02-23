@@ -1,6 +1,6 @@
 # Importing required libraries
 import streamlit as st
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 
 
 # Setting the page title
@@ -10,14 +10,14 @@ st.set_page_config(page_title="My Portfolio Website")
 
 # as sidebar menu
 
-
-selected = option_menu(
-    menu_title=None,
-    options=["Home", "About", "Skills", "Projects", "Contact"],
-    icons=["house", "person-circle", "code-slash", "person-workspace", "telephone"],
-    default_index=3,
-    orientation="horizontal",
-)
+with st.sidebar:
+    selected = option_menu(
+        menu_title=None,
+        options=["Home", "About", "Skills", "Projects", "Contact"],
+        icons=["house", "person-circle", "code-slash", "person-workspace", "telephone"],
+        default_index=3,
+        orientation="horizontal",
+    )
 if selected == "Home":
     st.write("Home")
     st.html(
