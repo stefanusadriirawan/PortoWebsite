@@ -59,6 +59,16 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 600px) {
+    .logo a {
+        font-size: 16px;
+    }
+    li {
+        margin: 0 5px;
+    }
+}
 </style
 
 
