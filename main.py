@@ -156,5 +156,5 @@ st.header("Contact")
 st.write("""
 - Email: john.doe@email.com
 - Phone: +1-123-456-7890
-- LinkedIn: [https://www.linkedin.com/in/johndoe](https://www.linkedin.com/in/johndoe)
+- LinkedIn: 
 """)
