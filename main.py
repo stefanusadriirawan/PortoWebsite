@@ -29,7 +29,7 @@ st.markdown(
     }
     
     /* For tablets and up: */
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 375x) {
         /* Three equal columns */
         .col-3 {
             float: left;
@@ -84,7 +84,7 @@ st.markdown(
     }
     
     /* Media queries for responsive design */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 375px) {
         .logo a {
             font-size: 16px;
         }
@@ -97,30 +97,30 @@ st.markdown(
     
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Minimalist Navbar</title>
-	<link rel="stylesheet" type="text/css" href="navbar.css">
-</head>
-<body>
-	<header>
-		<nav>
-			<div class="logo"><a href="#">My Website</a></div>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<br>
-	
-</body>
-</html>
-
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Minimalist Navbar</title>
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo"><a href="#">My Website</a></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        
+    </body>
+    </html>
+    
 """, unsafe_allow_html=True)
 
 
