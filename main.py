@@ -1,24 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-selected = option_menu(
-    menu_title="Main Menu",
-    options=["Home", "About", "Skills", "Projects", "Contact"],
-    icons=["house", "person-circle", "code-slash", "person-workspace", "telephone"],
-    orientation="horizontal",
-    default_index=0,
-)
-
-if selected == "Home":
-    st.write("Home")
-elif selected == "About":
-    st.write("About")
-elif selected == "Skills":
-    st.write("Skills")
-elif selected == "Projects":
-    st.write("Projects")
-elif selected == "Contact":
-    st.write("Contact")
 
 # options=["Home", "About", "Skills", "Projects", "Contact"],
 # icons=["house", "person-circle", "code-slash", "person-workspace", "telephone"],
